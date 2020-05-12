@@ -23,3 +23,12 @@ Synchronized blocks do not guarantee in what order threads waiting to enter them
 
 What if you just have one thread writing to a shared variable, and other threads only reading that variable? Then you might be able to just use a volatile variable without any synchronization around.   
 
+## Java Volatile Keyword   
+visibility:   
+memory -> CPU cache -> thread   
+
+```
+public volatile int counter = 0;
+```
+The Java volatile keyword is intended to address variable visibility problems. By declaring the counter variable volatile all writes to the counter variable will be written back to main memory immediately. Also, all reads of the counter variable will be read directly from main memory.   
+
