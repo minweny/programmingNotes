@@ -1,4 +1,31 @@
 
+ 
+## lock and condition   
+source: core java vol 1  
+```
+Lock bankLock;
+Condition sufficientFunds;
+public void transfer(int from, int to, double amount) throws InterruptedException
+{
+    bankLock.lock();
+    try
+    {
+        while (accounts[from] < amount)
+            sufficientFunds.await();
+        System.out.print(Thread.currentThread());
+        accounts[from] -= amount;
+        System.out.printf(" %10.2f from %d to %d", amount, from, to);
+        accounts[to] += amount;
+        System.out.printf(" Total Balance: %10.2f%n", getTotalBalance());
+        sufficientFunds.signalAll();
+    }
+    finally
+    {
+        bankLock.unlock();
+    }
+}
+```
+
 ## The Java synchronized Keyword    
 
 The synchronized keyword can be used to mark four different types of blocks:
@@ -11,6 +38,21 @@ Code blocks inside static methods
 ```
 synchronized(this)
 synchronized(SynchronizedExample.class)
+
+```
+
+## lock vs. synchronized    
+lock and condition offers high degree of control.   
+```
+lock:
+await()
+signalAll()
+signal()
+
+synchronized -> object class:
+wait()
+notifyAll()
+notify()
 
 ```
 
