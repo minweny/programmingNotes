@@ -44,3 +44,19 @@ tions that you should not have allowed in the first place ( RuntimeException ). 
 method fails to faithfully declare all checked exceptions, the compiler will issue
 an error message.   
 
+## catch multiple exception types in the same catch clause      
+```
+try
+{
+    code that might throw exceptions
+}
+catch (FileNotFoundException | UnknownHostException e)
+{
+    emergency action for missing files and unknown hosts
+}
+catch (IOException e)
+{
+    emergency action for all other I/O problems
+}
+```
+
