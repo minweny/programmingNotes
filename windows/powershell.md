@@ -1,7 +1,7 @@
 
 
 Powershell基础入门及常见用法   
-https://www.toutiao.com/i6828797086176117262/?tt_from=weixin&utm_campaign=client_share&wxshare_count=1&timestamp=1590005811&app=news_article&utm_source=weixin&utm_medium=toutiao_ios&req_id=20200521041651010130036163322503C7&group_id=6828797086176117262
+https://www.toutiao.com/i6828797086176117262    
 
 ```
 check version   
