@@ -74,3 +74,7 @@ public volatile int counter = 0;
 ```
 The Java volatile keyword is intended to address variable visibility problems. By declaring the counter variable volatile all writes to the counter variable will be written back to main memory immediately. Also, all reads of the counter variable will be read directly from main memory.   
 
+## Producer-Consumer Problem in Java    
+https://www.geeksforgeeks.org/producer-consumer-solution-using-threads-java/    
+https://dzone.com/articles/the-evolution-of-producer-consumer-problem-in-java    
+
