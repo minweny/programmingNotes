@@ -136,4 +136,57 @@ then it’s a case of composition.
 
 ```
 
+## static nested class		
+```
+OuterClass.StaticNestedClass nestedObject =
+     new OuterClass.StaticNestedClass();
+```
+
+## java inner class	
+```
+
+OuterClass outerObject = new OuterClass();
+OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+
+```
+
+## Java Primitive Data Types	
+<table class="tg"><tbody><tr><th class="tg-two">Type</th><th class="tg-two">Size</th><th class="tg-two">Range</th><th class="tg-two">Default Value</th><th class="tg-two">Examples</th></tr><tr><td class="tg-one">boolean</td><td class="tg-one">1 bit</td><td class="tg-one">NA</td><td class="tg-one">false</td><td class="tg-one">boolean bool = true;</td></tr><tr><td class="tg-two">char</td><td class="tg-two">16 bits</td><td class="tg-two">Unicode Characters</td><td class="tg-two">‘\u0000’ or 0, which<br>is nothing but a <br>white space</td><td class="tg-two">char c = ‘A’;<br>char c = ‘\u0041’;<br>char c = 65;<br>char c = ‘\t’;</td></tr><tr><td class="tg-one">byte</td><td class="tg-one">8 bits</td><td class="tg-one">[-128,127] or<br>[-2^7 to 2^7-1]</td><td class="tg-one">0</td><td class="tg-one">byte b = 10;<br>byte b = 0b010;</td></tr><tr><td class="tg-two">short</td><td class="tg-two">16 bits</td><td class="tg-two">[-32768,32767]</td><td class="tg-two">0</td><td class="tg-two">short s = 32;<br>short s = ‘A’;</td></tr><tr><td class="tg-one">int</td><td class="tg-one">32 bits</td><td class="tg-one">[-2147483648,2147483647]</td><td class="tg-one">0</td><td class="tg-one">int i = 10;<br>int i = ‘A’;</td></tr><tr><td class="tg-two">long</td><td class="tg-two">64 bits</td><td class="tg-two">[-2^63,2^63-1]</td><td class="tg-two">0</td><td class="tg-two">long l = 3200L;<br>long l = 3200;</td></tr><tr><td class="tg-one">float</td><td class="tg-one">32 bits</td><td class="tg-one">[-3.4E38, 3.4E38]</td><td class="tg-one">0.0f</td><td class="tg-one">float f = (float) 12.34;<br>float f = 12.34f;</td></tr><tr><td class="tg-two">double</td><td class="tg-two">64 bits</td><td class="tg-two">[-1.7E308, 1.7E308]</td><td class="tg-two">0.0</td><td class="tg-two">double d = 12.34;</td></tr></tbody></table>
+
+## Java Ternary Operator	
+```
+result = testStatement ? value1 : value2;
+```
+
+## interface	
+```
+By default any attribute of interface is public, static and final.
+
+By default interface methods are implicitly abstract and public.
+
+public interface Shape extends Cloneable{}.
+
+implements keyword is used by classes to implement an interface.
+
+java class can implements multiple interfaces, it’s better to use interfaces 
+as super class in most of the cases.
+
+java8:
+
+
+```
+
+Are static methods inherited in Java?	
+https://stackoverflow.com/questions/10291949/are-static-methods-inherited-in-java	
+
+## Java String substring	
+1. substring(int beginIndex): This method returns a new string that is a substring of this string. The substring begins with the character at the specified index and extends to the end of this string.	
+2. substring(int beginIndex, int endIndex): The substring begins at the specified beginIndex and extends to the character at index endIndex – 1. Thus the length of the substring is (endIndex – beginIndex).		
+
+## String to char Java	
+1. char[] toCharArray(): This method converts string to character array. The char array size is same as the length of the string.	
+2. char charAt(int index): This method returns character at specific index of string. This method throws StringIndexOutOfBoundsException if the index argument value is negative or greater than the length of the string.	
+
+
+
 
