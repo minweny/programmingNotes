@@ -187,6 +187,155 @@ https://stackoverflow.com/questions/10291949/are-static-methods-inherited-in-jav
 1. char[] toCharArray(): This method converts string to character array. The char array size is same as the length of the string.	
 2. char charAt(int index): This method returns character at specific index of string. This method throws StringIndexOutOfBoundsException if the index argument value is negative or greater than the length of the string.	
 
+## Java ArrayList of Array	
+```
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class JavaArrayListOfStringArray {
+
+	public static void main(String[] args) {
+		// List of String arrays
+		List<String[]> list = new ArrayList<String[]>();
+		
+		String[] arr1 = { "a", "b", "c" };
+		String[] arr2 = { "1", "2", "3", "4" };
+		list.add(arr1);
+		list.add(arr2);
+		// printing list of String arrays in the ArrayList
+		for (String[] strArr : list) {
+			System.out.println(Arrays.toString(strArr));
+		}
+	}
+
+}
+
+```
+
+## Array of ArrayList in Java
+```
+ArrayList<Integer>[] al = new ArrayList[n];
+ArrayList<Individual>[] group = (ArrayList<Individual>[])new ArrayList[4];
+```
+
+## How java varargs work?	
+```
+
+//method with variable arguments
+public static int sum(int i, int...js ){
+    int sum = i;
+    for(int x : js){
+        sum+=x;
+    }
+    return sum;
+}
+
+//method with same implementation as sum with array as argument
+public static int sumArray(int i, int[] js ){
+    int sum = i;
+    for(int x : js){
+        sum+=x;
+    }
+    return sum;
+}
+
+```
+
+## ArrayList to Array in Java	
+strArr = strList.toArray(new String[0]);	
+
+## Java Array to List	
+1. Arrays.asList(T… a): This is the simplest way to convert Array to ArrayList in java but this method returns the underlying representation of the array in the form of ArrayList. The returned ArrayList is fixed-sized and any attempt to modify that will result in UnsupportedOperationException at runtime. Also, any change in the array will change the elements in ArrayList also.	
+2. Collections.addAll(ArrayList<T> strList, T[] strArr): This is the best way to convert array to ArrayList because the array data is copied to the list and both are independent object. Once the array is copied, you can modify both the objects independently. Collections is a very useful class in Java Collections Framework that provides a lot of utility methods.	
+
+## Java List sort	
+Collections.sort(ints);		
+
+## Comparable		
+```
+
+class Person implements Comparable<Person> {
+    int id;
+    String name;
+
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public int compareTo(Person p) {
+        return this.name.compareTo(p.name);
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
+
+```
+
+## Comparator		
+```
+
+package com.journaldev.sort;
+
+import java.util.Comparator;
+
+public class EmployeeComparatorByIdAndName implements Comparator<Employee> {
+
+    @Override
+    public int compare(Employee o1, Employee o2) {
+        int flag = o1.getId() - o2.getId();
+        if(flag==0) flag = o1.getName().compareTo(o2.getName());
+        return flag;
+    }
+
+}
+
+```
+
+## Java TreeMap Example		
+```
+
+package com.journaldev.java;
+
+import java.util.Comparator;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class JavaTreeMapExample {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String> map = new TreeMap<>();
+		
+		map.put(10, "10");
+		map.put(1, "1");
+		map.put(5, "5");
+		
+		System.out.println(map);
+		
+		map = new TreeMap<>(new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer x, Integer y) {
+				return (x > y) ? -1 : ((x == y) ? 0 : 1);
+			}
+			
+		});
+		map.put(10, "10");
+		map.put(1, "1");
+		map.put(5, "5");
+		System.out.println(map);
+
+	}
+
+}
+
+```
 
 
