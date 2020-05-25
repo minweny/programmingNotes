@@ -104,3 +104,36 @@ protected - only to the classes in the same package and to the subclasses.
 default - in the same package only
 ```
 
+## Java static block		
+Java static block is the group of statements that gets executed when the class is loaded into memory 
+by Java ClassLoader.		
+
+Static block is used to initialize the static variables of the class. 
+Mostly it’s used to create static resources when the class is loaded.		
+
+## Java Static Class		
+We can use static keyword with nested classes. static keyword can’t be used with top-level classes.		
+
+A static nested class is same as any other top-level class and is nested for only packaging convenience.	
+
+## OOPS Concepts		
+```
+Abstraction - Abstraction is the concept of hiding the internal details and describing things in simple terms. 
+For example, a method that adds two integers. 
+
+Encapsulation - Access modifier
+
+Polymorphism:
+compile time - method overloading
+runtime - method overriding
+
+Inheritance - Inheritance is the mechanism of code reuse. The object that is getting inherited is called the superclass 
+and the object that inherits the superclass is called a subclass.
+
+Composition - When the contained object in “HAS-A” relationship can’t exist on its own, 
+then it’s a case of composition. 
+
+
+```
+
+
