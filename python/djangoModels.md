@@ -37,7 +37,8 @@ Group has relation to person, person doesn't need to have relation to group.
 
 ```
 
-## Retrieving objects¶
+## Retrieving objects¶      
+[https://docs.djangoproject.com/en/3.0/topics/db/queries/#m2m-reverse-relationships]        
 To retrieve objects from your database, construct a QuerySet via a Manager on your model class.     
 
 A QuerySet represents a collection of objects from your database. It can have zero, one or many filters. Filters narrow down the query results based on the given parameters. In SQL terms, a QuerySet equates to a SELECT statement, and a filter is a limiting clause such as WHERE or LIMIT.     
@@ -52,3 +53,17 @@ Traceback:
     ...
 AttributeError: "Manager isn't accessible via Blog instances."
 ```
+
+## Following relationships “backward”¶     
+If a model has a ForeignKey, instances of the foreign-key model will have access to a Manager that returns all instances of the first model. By default, this Manager is named FOO_set, where FOO is the source model name, lowercased. This Manager returns QuerySets, which can be filtered and manipulated as described in the “Retrieving objects” section above.       
+
+Example:        
+```
+>>> b = Blog.objects.get(id=1)
+>>> b.entry_set.all() # Returns all Entry objects related to Blog.
+
+# b.entry_set is a Manager that returns QuerySets.
+>>> b.entry_set.filter(headline__contains='Lennon')
+>>> b.entry_set.count()
+```
+
