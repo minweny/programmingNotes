@@ -24,4 +24,5 @@ console.log(msg);
 
 ```
 
-
+## MEAN   
+MEAN is an acronym for MongoDB, ExpressJS, AngularJS, and Node.js.    
