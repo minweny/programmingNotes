@@ -155,8 +155,40 @@ user2.admin?.();
 - for (let item of arr) – the modern syntax for items only,
 - for (let i in arr) – never use.
 
+## The “arguments” variable     
+There is also a special array-like object named arguments that contains all arguments by their index.
+```
+For instance:
 
+function showName() {
+  alert( arguments.length );
+  alert( arguments[0] );
+  alert( arguments[1] );
 
+  // it's iterable
+  // for(let arg of arguments) alert(arg);
+}
+
+// shows: 2, Julius, Caesar
+showName("Julius", "Caesar");
+
+// shows: 1, Ilya, undefined (no second argument)
+showName("Ilya");
+```
+
+## array/object copy        
+```
+let arr = [1, 2, 3];
+let arrCopy = [...arr]; // spread the array into a list of parameters
+                        // then put the result into a new array
+
+let obj = { a: 1, b: 2, c: 3 };
+let objCopy = { ...obj }; // spread the object into a list of parameters
+                          // then return the result in a new object
+```
+
+## Decorator        
+Decorator is a wrapper around a function that alters its behavior.
 
 
 
