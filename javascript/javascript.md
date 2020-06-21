@@ -190,5 +190,15 @@ let objCopy = { ...obj }; // spread the object into a list of parameters
 ## Decorator        
 Decorator is a wrapper around a function that alters its behavior.
 
+## func.call
+There’s a special built-in function method func.call(context, …args) that allows to call a function explicitly setting this.
+
+The syntax is:
+
+func.call(context, arg1, arg2, ...)
+It runs func providing the first argument as this, and the next as the arguments.
+
+
+
 
 
