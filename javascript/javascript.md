@@ -198,6 +198,15 @@ The syntax is:
 func.call(context, arg1, arg2, ...)
 It runs func providing the first argument as this, and the next as the arguments.
 
+## this     
+https://www.jianshu.com/p/776248099e17      
+http://www.ruanyifeng.com/blog/2018/06/javascript-this.html     
+https://blog.csdn.net/qq_27118895/article/details/90418867      
+https://zhuanlan.zhihu.com/p/71490991       
+
+
+
+
 
 
 
