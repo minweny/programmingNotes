@@ -204,6 +204,9 @@ http://www.ruanyifeng.com/blog/2018/06/javascript-this.html
 https://blog.csdn.net/qq_27118895/article/details/90418867      
 https://zhuanlan.zhihu.com/p/71490991       
 
+## prototype vs. __proto__    
+https://medium.com/javascript-in-plain-english/proto-vs-prototype-in-js-140b9b9c8cd5    
+
 
 
 
