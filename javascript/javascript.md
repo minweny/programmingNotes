@@ -207,6 +207,30 @@ https://zhuanlan.zhihu.com/p/71490991
 ## prototype vs. __proto__    
 https://medium.com/javascript-in-plain-english/proto-vs-prototype-in-js-140b9b9c8cd5    
 
+## blob   
+https://medium.com/javascript-in-plain-english/javascript-blob-why-is-it-useful-20c372dfca00        
+
+## unicode && utf-8     
+https://blog.csdn.net/kindsuper_liu/article/details/80202150        
+
+## export && import     
+https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export     
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import     
+
+## nodejs req.on('close', )     
+https://stackoverflow.com/questions/7062885/expressjs-how-to-know-when-a-request-has-finished       
+
+## Anatomy of an HTTP Transaction       
+https://nodejs.org/es/docs/guides/anatomy-of-an-http-transaction/       
+
+
+
+
+
+
+
+
+
 
 
 
