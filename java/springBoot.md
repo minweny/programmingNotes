@@ -90,6 +90,10 @@ java -jar target/gs-rest-service-0.1.0.jar
 https://www.baeldung.com/rest-template      
 https://www.baeldung.com/spring-5-webclient     
 
+## Spring RestTemplate		
+https://www.concretepage.com/spring-5/spring-resttemplate-getforobject		
+https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/		
+
 
 
 
