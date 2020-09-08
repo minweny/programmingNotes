@@ -224,8 +224,32 @@ https://stackoverflow.com/questions/7062885/expressjs-how-to-know-when-a-request
 https://nodejs.org/es/docs/guides/anatomy-of-an-http-transaction/       
 
 ## JavaScript Bind    
-https://gist.github.com/fongandrew/f28245920a41788e084d77877e65f22f   
-My assumption is that the the function context is set in the constructor(object initiation).    
+https://gist.github.com/fongandrew/f28245920a41788e084d77877e65f22f     
+(why react <button onClick={() => this.sayName()}>Say My Name</button>;   
+instead of    
+<button onClick={this.sayName}>Say My Name</button>;    
+)      
+```
+class Dog {
+  constructor() {
+    this.favoriteWord = "Woof!";
+  }
+  
+  bark() {
+    return this.favoriteWord;
+  }
+}
+
+let dog = new Dog();
+dog.bark(); // => Woof!
+
+let bark = dog.bark;
+bark(); // => Error
+
+let alwaysWoof = bark.bind(dog);
+alwaysWoof(); // => "Woof!"
+```
+My understanding: When object is created, constructor is executed. The function context(this) is set permanently. When you call the function directly, you can still have access to the context.  
 
 
 
