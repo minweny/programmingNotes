@@ -223,5 +223,9 @@ https://stackoverflow.com/questions/7062885/expressjs-how-to-know-when-a-request
 ## Anatomy of an HTTP Transaction       
 https://nodejs.org/es/docs/guides/anatomy-of-an-http-transaction/       
 
+## JavaScript Bind    
+https://gist.github.com/fongandrew/f28245920a41788e084d77877e65f22f   
+My assumption is that the the function context is set in the constructor(object initiation).    
+
 
 
